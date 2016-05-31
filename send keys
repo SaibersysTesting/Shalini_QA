@@ -1,0 +1,16 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+
+public class OpenFFbrowser {
+
+	public static void main(String[] args) throws InterruptedException {
+		FirefoxDriver d1 = new FirefoxDriver();
+		d1.get("http://saibersystesting.com");
+		d1.findElement(By.id("what")).sendKeys("selenium");
+		Thread.sleep(5000); 
+		d1.findElement(By.xpath("//input[@id='where']")).clear(); 
+		d1.findElement(By.xpath("//input[@id='where']")).sendKeys("Dallas");
+
+             Thread.sleep(5000); 
+		d1.close();
