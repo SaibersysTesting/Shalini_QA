@@ -1,0 +1,20 @@
+public class EMailTestStep extends WsdlTestStepWithProperties
+{
+       protected EMailTestStep( WsdlTestCase testCase, TestStepConfig config, boolean forLoadTest )
+       {
+                 super( testCase, config, true, forLoadTest );
+
+                 if( !forLoadTest )
+                 {
+                         setIcon( UISupport.createImageIcon( "email.png" ) );
+                 }           
+        }
+
+        @Override
+        public TestStepResult run( TestCaseRunner testRunner, TestCaseRunContext context )
+        {
+               WsdlTestStepResult result = new WsdlTestStepResult( this );
+               result.setStatus( TestStepStatus.OK );
+               return result;
+        }
+ }
