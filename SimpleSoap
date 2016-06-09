@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+  <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+                     xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+                     xmlns:xsd=“http://www.soapui.org"
+                     xmlns:xsi=“http://www.soapui.org-instance"
+                     SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+    <SOAP-ENV:Body>
+      <GetGeoIP xmlns="http://www.webservicex.net/">
+        <IPAddress>70.228.109.252</IPAddress>
+      </GetGeoIP>
+    </SOAP-ENV:Body>
+  </SOAP-ENV:Envelope>
