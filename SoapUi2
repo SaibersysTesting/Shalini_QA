@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:soapui-factories xmlns:tns="http://eviware.com/soapui/config">
+     <tns:factory id="EMailTestStep" 
+  factoryType="com.eviware.soapui.impl.wsdl.teststeps.registry.WsdlTestStepFactory" 
+  factoryClass="soapui.demo.teststeps.email.EMailTestStepFactory"/>
+
+</tns:soapui-factories>
